@@ -1,0 +1,93 @@
+.xizmatlar {
+}
+
+.xizmatlar__title {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #37474F;
+margin-right: 15px;
+}
+.line {
+    display: inline-block;
+    background: #37474F;
+    max-width: 35px;
+    height: 1px;
+}
+.xizmatlar__title2 {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 62px;
+color: #191C2F;
+}
+.xizmatlar__list {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 20px;
+}
+.xizmatlar__item {
+    max-width: 427px;
+    height: 282px;
+    background: rgba(35, 4, 157, 0.03);
+border-radius: 10px;
+text-align: center;
+padding: 30px 25px 26px 25px;
+}
+.xizmatlar__item:hover{
+    background: rgba(35, 4, 157, 0.03);
+border: 1px solid #FEAB38;
+border-radius: 10px;
+box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.282);
+}
+.xizmatlar__item-title {
+    font-family: 'roboto';
+    font-weight: 100;
+    font-style: italic;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+
+color: #191C2F;
+margin-bottom: 8px;
+}
+.xizmatlar__item-text {
+    font-family: 'roboto';
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #191C2F;
+    max-width: 369px;
+}
+.xizmatlar__item-img{
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width:920px) {
+    .xizmatlar__item{
+       max-width: 387px;
+    }
+    .xizmatlar__item-text{
+        max-width: 334px;
+    }
+    
+}
+
+@media only screen and (max-width:450px) {
+    .xizmatlar__item{
+        max-width: 374px;
+    }
+    .xizmatlar__title{
+        font-size: 16px;
+line-height: 20px;
+    }
+    .xizmatlar__title2{
+        font-size: 40px;
+line-height: 50px;
+    }
+}

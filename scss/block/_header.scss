@@ -1,0 +1,121 @@
+.site-header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(25, 28, 47, 0.4);
+    margin-bottom: 52px;
+
+}
+.site-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header__logo-img {
+    margin-right: 98px;
+    max-width: 164px;
+    max-height: 35px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.navbar__item {
+}
+.navbar__item:not(:last-child){
+    margin-right: 40px;
+}
+.navbar__link {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+color: rgba(25, 28, 47, 0.6);
+}
+.navbar__link--weight{
+    color: #191C2F;
+}
+.navbar__link:hover{
+    color: #191C2F;
+}
+.navbar__tel {
+    margin-right: 35px;
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+color: rgba(18, 18, 22, 0.743);
+}
+.navbar__btn {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #191C2F;
+padding: 10px 15px 10px 45px;
+border: 0.8px solid rgba(25, 28, 47, 0.4);
+border-radius: 8px;
+background-color: transparent;
+position: relative;
+}
+.navbar__btn::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/naf-ru-vector.svg);
+    background-repeat: no-repeat;
+    left: 17px;
+}
+.burger-menu{
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    .navbar__list{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:960px) {
+    .site-header{
+        justify-content: space-between;
+        margin-bottom: 40px;
+       }
+    .navbar__list{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+        justify-content: end;
+        margin-left: 37px;
+    }
+    .navbar__tel{
+        font-size: 22px;
+line-height: 27px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .navbar__tel{
+        display: none;
+    }
+}
+@media only screen and (max-width:580px) {
+    .navbar__btn{
+        display: none;
+    }
+    .site-header{
+        padding: 35px 0;
+    }
+}

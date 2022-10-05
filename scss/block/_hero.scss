@@ -1,0 +1,137 @@
+.hero {
+    background: #37474F;
+border-radius: 10px;
+padding-top: 70px;
+padding-bottom: 70px;
+padding-left: 40px;
+margin-bottom: 120px;
+}
+.hero__container {
+    background-image: url(../../img/naf-hero.png);
+    background-repeat: no-repeat;
+    background-position: 528px -93px;
+
+    background-size: 795px 529px;
+}
+.hero__info-wrap{
+    max-width: 565px;
+}
+.hero__title {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 74px;
+color: #FFFFFF;
+margin-bottom: 15px;
+
+}
+.hero__text {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: rgba(255, 255, 255, 0.7);
+margin-bottom: 42px;
+}
+.hero__link-wrap {
+    display: flex;
+    align-items: center;
+
+}
+.hero__link {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+color: #FFFFFF;
+padding: 11px 18px 12px 18px;
+background: #DFBB7F;
+border-radius: 8px;
+margin-right: 38px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.hero__tel {
+    font-family: 'roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+color: #FFFFFF;
+padding: 12px 18px 12px 18px;
+border: 1px solid #FFFFFF;
+border-radius: 8px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+@media only screen and (max-width:1200px) {
+    .hero__title{
+        font-size: 40px;
+line-height: 50px;
+    }
+    .hero__container {
+        background-image: url(../../img/naf-hero.png);
+        background-repeat: no-repeat;
+        background-position: 381px -62px;
+        background-size: 558px 357px;
+    }
+    .hero__info-wrap{
+        max-width: 377px;
+    }
+    .hero__text{
+        font-size: 14px;
+line-height: 17px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .hero__container{
+        background-position: 320px -53px;
+        background-size: 521px 350px
+    }
+    .hero__link{
+        font-size: 16px;
+line-height: 20px;
+    }
+    .hero__tel{
+        font-size: 16px;
+line-height: 20px;
+    }
+}
+@media only screen and (max-width:834px) {
+    .hero__container{
+        background-position: 317px -45px;
+    background-size: 499px 338px;
+    }
+    .hero__link{
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width:490px) {
+    .hero{
+        padding: 40px 22px 310px 20px;
+    }
+    .hero__title{
+        font-size: 48px;
+line-height: 59px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .hero__link-wrap{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero__link{
+        margin-bottom: 22px;
+    }
+    .hero__container{
+        background-position: -37px 397px;
+      
+    }
+}
